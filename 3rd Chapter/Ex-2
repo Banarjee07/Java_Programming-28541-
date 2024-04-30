@@ -12,3 +12,18 @@ System.out.println("\ncounter++ is:"+counter++);
 System.out.println("\ncounter is: "+counter);
 }
 }
+
+
+
+Output:
+Counter is: 0
+
+++Counter is: 1
+
+Counter is: 1
+
+counter is: 0
+
+counter++ is:0
+
+counter is: 1
