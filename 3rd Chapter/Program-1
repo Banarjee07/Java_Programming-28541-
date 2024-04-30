@@ -1,0 +1,19 @@
+import java.util.Scanner; 
+class Add{ 
+	public static void main(String[] args){ 
+		Scanner sc= new Scanner(System.in); 
+		System.out.print("Enter The number-1: "); 
+		int a= sc.nextInt(); 
+		System.out.print("Enter The number-2: "); 
+		int b= sc.nextInt(); 
+		int add=a+b; 
+		System.out.println("The ans is "+add); 
+	} 
+}
+
+Output:
+Enter The number-1: 20
+Enter The number-2: 15
+The ans is 35
+
+=== Code Execution Successful ===
