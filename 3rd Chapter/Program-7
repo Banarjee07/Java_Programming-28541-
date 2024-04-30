@@ -1,0 +1,19 @@
+import java.util.Scanner; 
+class Rhombus{ 
+	public static void main(String[] args){ 
+		Scanner sc= new Scanner(System.in); 
+		System.out.print("Enter The diagonal-1: "); 
+		int d1= sc.nextInt(); 
+		System.out.print("Enter The diagonal-2: "); 
+		int d2= sc.nextInt(); 
+		double area=(0.5*(d1*d2)); 
+		System.out.println("Rhombus area is "+area); 
+	} 
+} 
+
+
+
+Output:
+Enter The diagonal-1: 12
+Enter The diagonal-2: 13
+Rhombus area is 78.0
