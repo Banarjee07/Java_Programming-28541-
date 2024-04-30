@@ -18,3 +18,16 @@ result=a+b*c;
 System.out.println("\n Expression : a+b*c =" +result);
 }
 }
+
+
+Output:
+a = 10
+b = 15
+c = 20
+Division: b/a = 1.5
+
+ Modulus: b%a = 5
+
+ Expression : a*b+c =170
+
+ Expression : a+b*c =310
