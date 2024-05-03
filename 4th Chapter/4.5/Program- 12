@@ -1,0 +1,35 @@
+import java.util.Scanner; 
+class Quadratic{ 
+	public static void main(String[] args) { 
+		Scanner scanner = new Scanner(System.in); 
+		System.out.print("General Equation is : ax^2 + bx + c = 0 \n"); 
+		System.out.print("a: "); 
+		double a= scanner.nextDouble(); 
+		System.out.print("b: "); 
+		double b= scanner.nextDouble(); 
+		System.out.print("c: "); 
+		double c= scanner.nextDouble(); 
+		double d=((b*b)-(4*a*c)); 
+		if(d>0){ 
+			double r1=((-b+Math.sqrt(d))/2*a); 
+			double r2=((-b-Math.sqrt(d))/2*a); 
+			System.out.println("the root are "+r1 +" and "+ r2);
+		} 
+		else if (d==0) { 
+			double r=(-b/(2*a)); 
+			System.out.println("the root are "+r); 
+		} 
+		else { 
+			System.out.println("the root are not possible"); 
+		} 
+	} 
+}
+
+
+
+Output:
+General Equation is : ax^2 + bx + c = 0 
+a: 2
+b: 3
+c: 1
+the root are -2.0 and -4.0
