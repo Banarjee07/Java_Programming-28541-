@@ -1,0 +1,23 @@
+import java.util.Scanner; 
+class PositiveToNegative{ 
+	public static void main(String[] args){ 
+		Scanner sc= new Scanner(System.in); 
+		System.out.print("Enter Your number - "); 
+		int a= sc.nextInt(); 
+		if(a>0){
+			System.out.print("positive"); 
+		} 
+		else if (a==0) { 
+			System.out.print("Neutral Number"); 
+		} 
+		else { 
+			System.out.print("negative"); 
+		} 
+	} 
+} 
+
+
+
+Output:
+Enter Your number - 1
+positive
