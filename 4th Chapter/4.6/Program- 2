@@ -1,0 +1,21 @@
+class Main { 
+	public static void main(String[] args) { 
+		int sum,i,n; 
+		Scanner scanner = new Scanner(System.in); 
+		System.out.println("enter your number :"); 
+		n = scanner.nextInt(); 
+		sum=0; 
+		for(i=0;i<=10;i++) 
+		{ 
+			sum=sum+i; 
+		} 
+		System.out.println("ans is :"+sum);
+	} 
+} 
+
+
+
+Output:
+enter your number :
+10
+ans is :55
