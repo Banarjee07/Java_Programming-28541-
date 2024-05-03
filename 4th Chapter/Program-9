@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class DoWhile {
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+        int n,res,div;
+        System.out.print("Enter a number: ");
+        n = input.nextInt();
+         System.out.print("The Number Reverse Order is:");
+ 
+    do{
+        res = n%10;
+        System.out.print(" "+res);
+        div = n/10;
+        n=div;
+    }while(n!=0);
+    }
+}
+
+
+
+Output:
+Enter a number: 2587
+The Number Reverse Order is: 7 8 5 2
