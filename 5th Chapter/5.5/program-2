@@ -1,0 +1,34 @@
+public class MatrixExample {
+    public static void main(String[] args) {
+        // Define the dimensions of the matrix
+        int rows = 3;
+        int cols = 3;
+
+        // Create a 2-dimensional array (matrix)
+        int[][] matrix = new int[rows][cols];
+
+        // Populate the matrix with some values
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                matrix[i][j] = i + j; // Just an example, you can set any values here
+            }
+        }
+
+        // Display the matrix
+        System.out.println("Matrix:");
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                System.out.print(matrix[i][j] + "\t");
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+
+Output:
+Matrix:
+0	1	2	
+1	2	3	
+2	3	4	
