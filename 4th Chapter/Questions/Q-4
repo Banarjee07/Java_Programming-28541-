@@ -1,0 +1,13 @@
+public class Main {
+	public static void main(String[] args) {
+	          for (int i=20; i>=6; i=i-2) {
+		System.out.print(i);
+		System.out.print(" ");
+		}
+		}
+	}
+
+
+
+Output:
+20 18 16 14 12 10 8 6 
