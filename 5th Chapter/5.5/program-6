@@ -10,3 +10,9 @@ class Main {
         System.out.println("Average = " + average);
     }
 }
+
+
+
+Output:
+Sum = 389
+Average = 35.36363636363637
