@@ -1,0 +1,24 @@
+import java.util.Scanner; 
+class Main { 
+	public static void main(String[] args) { 
+		Scanner scanner = new Scanner(System.in); 
+		System.out.println("enter your number :"); 
+		int n = scanner.nextInt(); 
+		int sum = 0; 
+		int i = 0;
+		do { 
+			if (i % 2 == 0) { 
+				sum += i; 
+			} 
+			i++; 
+		} while (i <= n); 
+		System.out.println("Sum of even numbers from 0 to " + n + ": " + sum); 
+	} 
+} 
+
+
+
+Output:
+enter your number :
+10
+Sum of even numbers from 0 to 10: 30
