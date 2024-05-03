@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class ForLoop {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in); 
+        int i,n,sum=0;
+        System.out.println("Enter Value of N <>=1):");
+        n=input.nextInt();
+        System.out.println("N\t 1+2+3+4.........+N");
+        System.out.println("-----------------------------");
+        for(i=1; i<=n; i++){
+            sum = sum+i;
+            System.out.println(i+"\t\t"+sum);
+        }
+    }
+}
+
+
+
+Output:
+Enter Value of N <>=1):
+5
+N	 1+2+3+4.........+N
+-----------------------------
+1		1
+2		3
+3		6
+4		10
+5		15
