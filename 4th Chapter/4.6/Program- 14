@@ -1,0 +1,22 @@
+import java.util.Scanner; 
+class Main { 
+	public static void main(String[] args) { 
+		Scanner scanner = new Scanner(System.in); 
+		System.out.println("enter your number :"); 
+		int n = scanner.nextInt(); 
+		int i; 
+		i=10; 
+		do{ 
+			System.out.print(" "+i); 
+			i--; 
+		} 
+		while (i>=1); 
+	} 
+} 
+
+
+
+Output:
+enter your number :
+10
+ 10 9 8 7 6 5 4 3 2 1
