@@ -1,0 +1,21 @@
+import java.util.Scanner; 
+class Main { 
+	public static void main(String[] args) { 
+	    int i,j; 
+		Scanner scanner = new Scanner(System.in); 
+		System.out.println("enter your number :"); 
+		i = scanner.nextInt(); 
+		
+		while (i>=1){ 
+			System.out.print(" "+i); 
+			i--; 
+		} 
+	} 
+} 
+
+
+
+Output:
+enter your number :
+10
+ 10 9 8 7 6 5 4 3 2 1
