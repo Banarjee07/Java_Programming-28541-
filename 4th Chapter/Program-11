@@ -1,0 +1,30 @@
+import java.io.*;
+public class cont
+{
+public static void main(String args[]) throws IOException
+{
+int n=0;
+String s;
+for(;;)
+{
+BufferedReader BR =new BufferedReader (new InputStreamReader (System.in));
+System.out.println("Enter a Positive Number");
+s=BR.readLine();
+n=Integer.parseInt(s);
+if(n<=0)
+continue;
+else
+break;
+}
+System.out.println("You have entered : " + n);
+}
+}
+
+
+
+Output:
+Enter a Positive Number
+0
+Enter a Positive Number
+15
+You have entered : 15
