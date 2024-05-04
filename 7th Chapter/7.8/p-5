@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class SwapxJava {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Enter the value for A: ");
+        int a = input.nextInt();
+        
+        System.out.print("Enter the value for B: ");
+        int b = input.nextInt();
+        
+        // Swapping the values
+        int temp = a;
+        a = b;
+        b = temp;
+        
+        System.out.println("After swapping:");
+        System.out.println("A = " + a);
+        System.out.println("B = " + b);
+        
+        // Closing the Scanner object
+        input.close();
+    }
+}
+
+
+
+Output:
+Enter the value for A: 10
+Enter the value for B: 12
+After swapping:
+A = 12
+B = 10
