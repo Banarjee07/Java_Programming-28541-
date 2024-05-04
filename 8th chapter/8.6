@@ -1,0 +1,32 @@
+abstract class Student{
+    public int roll;
+    public String name;
+    abstract void GetData();
+}
+class Result extends Student{
+    float Mark;
+    void GetData(){
+        roll = 12345;
+        name = "Wahid";
+        Mark = 88.4f;           
+    }
+    void Display(){
+        System.out.println("Roll is "+roll);
+        System.out.println("Name is "+name);
+        System.out.println("Mark is "+Mark);
+    }
+}
+public class AbstractExample {
+    public static void main(String[] args) {
+        Result R = new Result();
+        R.GetData();
+        R.Display();
+    }
+}
+
+
+
+Output:
+Roll is 12345
+Name is Wahid
+Mark is 88.4
