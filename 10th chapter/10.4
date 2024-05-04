@@ -1,0 +1,43 @@
+interface Student
+{
+ String Name="Tonny"; 		//static final member
+}
+interface Exam
+{
+int Roll=96004;		//static final member
+void Display( );		//Interface method decleared
+}
+class Result implements Student, Exam
+{
+public float Mark;
+public void Display()		//Interface method defined
+{
+System.out.println("Roll is : "+Roll);
+System.out.println("Name is :"+Name);
+}
+public void GetMark()		//own method defined
+{
+Mark = 87.5f;
+}
+public void ShowMark()		//own method defined
+{
+System.out.println("Mark is :"+Mark);
+}
+}
+public class mulinterf
+{
+public static void main(String args[])
+{
+Result R=new Result();
+R.Display();		//Calling interface Method
+R.GetMark();		//Calling Derived Class Method
+R.ShowMark();		//Calling Derived Class Method
+}
+}
+
+
+
+Output:
+Roll is : 96004
+Name is :Tonny
+Mark is :87.5
