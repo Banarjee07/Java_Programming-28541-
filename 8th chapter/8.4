@@ -1,0 +1,30 @@
+// Parent class
+class Animal {
+    void makeSound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+// Child class
+class Dog extends Animal {
+    // Overrides the makeSound method of the parent class
+    void makeSound() {
+        System.out.println("Dog barks");
+    }
+}
+
+// Main class
+public class Main {
+    public static void main(String[] args) {
+        // Create an object of Dog class
+        Dog dog = new Dog();
+        
+        // Call the makeSound method
+        dog.makeSound();
+    }
+}
+
+
+
+Output:
+Dog barks
