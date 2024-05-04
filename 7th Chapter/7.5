@@ -1,0 +1,39 @@
+class over{
+    int cal(int x, int y){
+        int z;
+        z = x + y;
+        System.out.println("Using Integer Method");
+        System.out.println("Result is: "+z);
+        return 0;
+    }
+    float cal(float m1, float m2){
+        float mark;
+        mark = m1 + m2;
+        System.out.println("Using Float Method");
+        System.out.println("The Mark is: "+mark);
+        return 0;
+    }
+    int cal(int x){
+        System.out.println("Usingt Input/Output Method");
+        System.out.println(x);
+        return 0;
+    }
+}
+public class overloading {
+    public static void main(String[] args) {
+        over s = new over();
+        s.cal(65.2f, 50.36f);
+        s.cal(55);
+        s.cal(43,10);
+    }
+}
+
+
+
+Output:
+Using Float Method
+The Mark is: 115.56
+Usingt Input/Output Method
+55
+Using Integer Method
+Result is: 53
