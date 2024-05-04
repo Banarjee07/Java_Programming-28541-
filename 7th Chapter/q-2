@@ -1,0 +1,17 @@
+public class Main {
+  static void myMethod(String fname) //Method prototype
+  {
+    System.out.println(fname + " Abdul Kadir.");
+  }
+  public static void main(String[] args) {
+    myMethod("Wahid &");
+    myMethod("Azad &");
+    myMethod("Foysal &");
+  }
+}
+
+
+Output:
+Wahid & Abdul Kadir.
+Azad & Abdul Kadir.
+Foysal & Abdul Kadir.
