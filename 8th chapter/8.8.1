@@ -1,0 +1,43 @@
+// Parent class
+class Vehicle {
+    void drive() {
+        System.out.println("Vehicle is being driven.");
+    }
+}
+
+// Child class 1
+class Car extends Vehicle {
+    void start() {
+        System.out.println("Car has started.");
+    }
+}
+
+// Child class 2
+class ElectricCar extends Car {
+    void charge() {
+        System.out.println("Electric car is being charged.");
+    }
+}
+
+// Main class
+public class Main {
+    public static void main(String[] args) {
+        ElectricCar electricCar = new ElectricCar();
+
+        // Access methods from Vehicle class
+        electricCar.drive();
+
+        // Access methods from Car class
+        electricCar.start();
+
+        // Access methods from ElectricCar class
+        electricCar.charge();
+    }
+}
+
+
+
+Output:
+Vehicle is being driven.
+Car has started.
+Electric car is being charged.
