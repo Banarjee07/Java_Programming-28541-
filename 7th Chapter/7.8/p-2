@@ -1,0 +1,28 @@
+import java.util.Scanner; 
+
+public class Add_methodJava { 
+    public static void main(String[] args) { 
+        Scanner input = new Scanner(System.in); 
+        int num1, num2, addition; 
+        
+        System.out.print("Enter 1st num: "); 
+        num1 = input.nextInt();
+        System.out.print("Enter 2nd num: "); 
+        num2 = input.nextInt(); 
+        
+        addition = add(num1, num2); 
+        System.out.println("ADD is : " + addition); 
+    } 
+    
+    public static int add(int num1, int num2) { 
+        int sum = num1 + num2; 
+        return sum; 
+    } 
+}
+
+
+
+Output:
+Enter 1st num: 10
+Enter 2nd num: 20
+ADD is : 30
