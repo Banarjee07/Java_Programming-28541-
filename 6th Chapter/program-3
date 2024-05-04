@@ -1,0 +1,30 @@
+class Student{
+    protected int Roll;
+    protected String Name;
+    protected float Mark;
+    protected void GetData(){
+        Roll = 54044;
+        Name = "Wahid";
+        Mark = 88.6f;
+    }
+    protected void Display(){
+        System.out.println("Roll is: "+Roll);
+        System.out.println("Name is: "+Name);
+        System.out.println("Mark is: "+Mark);
+    }
+}
+
+public class Protect {
+    public static void main(String[] args) {
+        Student s = new Student();
+        s.GetData();
+        s.Display();  
+    }   
+}
+
+
+
+Output:
+Roll is: 54044
+Name is: Wahid
+Mark is: 88.6
