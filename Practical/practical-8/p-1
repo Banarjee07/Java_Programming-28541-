@@ -1,0 +1,31 @@
+class Student {
+    int Roll;
+    String Name = new String();
+}
+ class Result  extends Student{
+    float Mark;
+    void GetData(){
+        Roll=96006;
+        Name = "Sumaiya";
+        Mark = 70.75f;
+    }
+    void Display(){
+        System.out.println("Roll is: "+Roll);
+        System.out.println("Name is: "+Name);
+        System.out.println("Mark is: "+Mark);
+    }
+}
+public class Inherit {
+    public static void main(String[] args) {
+        Result R= new Result();
+        R.GetData();
+        R.Display();
+    }
+}
+
+
+
+Output:
+Roll is: 96006
+Name is: Sumaiya
+Mark is: 70.75
