@@ -1,0 +1,34 @@
+interface Student {
+    int ROLL = 8404;
+    String NAME = "Wahid";
+
+    void display();
+}
+class Result implements Student {
+    public float mark;
+
+    @Override
+    public void display() {
+        System.out.println("Roll is: " + Student.ROLL);
+        System.out.println("Name is: " + Student.NAME);
+    }
+
+    public void getMark() {
+        mark = 65.45f;
+        System.out.println("Mark is: " + mark);
+    }
+}
+public class Interf {
+    public static void main(String[] args) {
+        Result result = new Result();
+        result.display();
+        result.getMark();
+    }
+}
+
+
+
+Output:
+Roll is: 8404
+Name is: Wahid
+Mark is: 65.45
