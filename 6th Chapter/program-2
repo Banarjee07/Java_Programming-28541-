@@ -1,0 +1,29 @@
+class Student{
+     
+    private int Roll;
+    private String Name;
+    private float Mark;
+    private void GetData(){
+        Roll=12345;
+        Name = "Wahid";
+        Mark=85.5f;        
+    }
+        void Display(){
+            GetData();
+            System.out.println("Roll is: "+Roll);
+            System.out.println("Name is: "+Name);
+            System.out.println("Mark is: "+Mark);
+            }
+}
+public class priv {
+    public static void main(String[] args) {
+        Student s = new Student();
+        s.Display();
+    }
+}
+
+
+Output:
+Roll is: 12345
+Name is: Wahid
+Mark is: 85.5
