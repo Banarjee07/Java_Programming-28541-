@@ -1,0 +1,33 @@
+class Students{
+    float mark1,mark2,tutorial;
+    float total, GTotal;
+    float GetMark(float m1, float m2){
+        mark1 = m1;
+        mark2 = m2;
+        total = mark1+mark2;
+        return(total);
+    }
+    void Display(){
+        tutorial = 10;
+        GTotal = total + GetMark(45,60);
+        System.out.println("Tutorial Mark is: "+tutorial);
+        System.out.println("Mark1 is: "+mark1);
+        System.out.println("Mark2 is: "+mark2);
+        System.out.println("Grand Total is: "+GTotal);
+    }
+}
+public class School {
+    public static void main(String[] args) {
+        Students s = new Students();
+        s.Display();
+    }
+    
+}
+
+
+
+Output:
+Tutorial Mark is: 10.0
+Mark1 is: 45.0
+Mark2 is: 60.0
+Grand Total is: 105.0
