@@ -1,0 +1,22 @@
+import java.util.Scanner; 
+public class Method_Circle_area { 
+public static void main(String[] args) { 
+Scanner input=new Scanner(System.in); 
+System.out.print("Enter the R: "); 
+double r=input.nextDouble(); 
+System.out.println("Area is "+c_area(r)); 
+} 
+static double c_area(double r) 
+{ 
+double radius=r; 
+double pi=Math.PI; 
+double area=pi*(radius*radius); 
+return area; 
+} 
+}
+
+
+
+Output:
+Enter the R: 5
+Area is 78.53981633974483
