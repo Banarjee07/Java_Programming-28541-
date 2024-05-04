@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class Area{
+	public static void main(String[] args){
+		Scanner sc= new Scanner(System.in);
+		System.out.print("Enter The radius :- ");
+		int r= sc.nextInt();
+		double area=Math.PI*r*r;
+		System.out.println("Circle area is : "+area);
+	}
+}
+
+
+
+Output:
+Enter The radius :- 5
+Circle area is : 78.53981633974483
