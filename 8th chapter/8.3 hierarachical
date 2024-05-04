@@ -1,0 +1,44 @@
+// Parent class
+class Animal {
+    void eat() {
+        System.out.println("Animal is eating.");
+    }
+}
+
+// Child class 1
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Dog is barking.");
+    }
+}
+
+// Child class 2
+class Cat extends Animal {
+    void meow() {
+        System.out.println("Cat is meowing.");
+    }
+}
+
+// Main class
+public class Main {
+    public static void main(String[] args) {
+        Dog dog = new Dog();
+        Cat cat = new Cat();
+        
+        // Accessing methods of Dog
+        dog.eat();
+        dog.bark();
+        
+        // Accessing methods of Cat
+        cat.eat();
+        cat.meow();
+    }
+}
+
+
+
+Output:
+Animal is eating.
+Dog is barking.
+Animal is eating.
+Cat is meowing.
