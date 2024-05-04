@@ -1,0 +1,24 @@
+public class StaticVaribleTest { 
+	int num; 
+	static int count; // static variable 
+	StaticVaribleTest(int n) { 
+		num = n; 
+		count ++; 
+	} 
+	public void show() { 
+		System.out.println("The number is: " + num); 
+	} 
+	public static void main(String args[]) { 
+		StaticVaribleTest test1 = new StaticVaribleTest(75); 
+		test1.show(); 
+		StaticVaribleTest test2 = new StaticVaribleTest(90); 
+		test2.show(); 
+		System.out.println("The total objects of a class created are: " + count); 
+	} 
+}
+
+
+Output:
+The number is: 75
+The number is: 90
+The total objects of a class created are: 2
