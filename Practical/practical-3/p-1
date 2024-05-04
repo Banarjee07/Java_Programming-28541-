@@ -1,0 +1,28 @@
+public class TwoDimentionArray {
+    public static void main(String[] args) {
+        int[][] a = {{35, 25, 17}, {55, 12, 37}};
+	int[][] b = {{23, 65, 32}, {44, 12, 88}};
+	int[][] Sum = new int[2][3];
+	int rows, columns;
+		
+	for(rows = 0; rows < a.length; rows++) {
+            for(columns = 0; columns < a[0].length; columns++) {
+		Sum[rows][columns] = a[rows][columns] + b[rows][columns];  
+		}			
+	}
+	System.out.println("Sum Of those Two Arrays are: ");
+            for(rows = 0; rows < a.length; rows++) {
+		for(columns = 0; columns < a[0].length; columns++) {
+                    System.out.format("%d \t", Sum[rows][columns]);
+		}
+		System.out.println("");
+            }
+    }
+}
+
+
+
+Output:
+Sum Of those Two Arrays are: 
+58 	90 	49 	
+99 	24 	125 	
