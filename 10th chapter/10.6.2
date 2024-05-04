@@ -1,0 +1,59 @@
+interface Polygon {
+    void getArea();
+
+    // Default method
+    default void getSides() {
+        System.out.println("I can get sides of a polygon.");
+    }
+}
+
+// Implements the interface
+class Rectangle implements Polygon {
+    public void getArea() {
+        int length = 6;
+        int breadth = 5;
+        int area = length * breadth;
+        System.out.println("The area of the rectangle is " + area);
+    }
+
+    // Overrides the getSides()
+    public void getSides() {
+        System.out.println("I have 4 sides.");
+    }
+}
+
+// Implements the interface
+class Square implements Polygon {
+    public void getArea() {
+        int length = 5;
+        int area = length * length;
+        System.out.println("The area of the square is " + area);
+    }
+
+    // Provides an implementation for getSides() (Optional)
+    public void getSides() {
+        System.out.println("I have 4 equal sides.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Create an object of Rectangle
+        Rectangle r1 = new Rectangle();
+        r1.getArea();
+        r1.getSides();
+
+        // Create an object of Square
+        Square s1 = new Square();
+        s1.getArea();
+        s1.getSides();
+    }
+}
+
+
+
+Output:
+The area of the rectangle is 30
+I have 4 sides.
+The area of the square is 25
+I have 4 equal sides.
