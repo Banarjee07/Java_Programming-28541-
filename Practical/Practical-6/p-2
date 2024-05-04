@@ -1,0 +1,28 @@
+class Student {
+    int Roll;
+    String Name;
+    float Mark;
+    public Student()//Constructor Method
+    {
+        Roll = 96004;
+        Name = "Munny";
+        Mark = 84.5f;
+    }
+    void Display()
+    {
+        System.out.println("Roll is: "+Roll);
+        System.out.println("Name is: "+Name);
+        System.out.println("Mark is: "+Mark);
+    }
+     public static void main(String[] args) {
+         Student s = new Student();
+         s.Display();
+     }
+}
+
+
+
+Output:
+Roll is: 96004
+Name is: Munny
+Mark is: 84.5
